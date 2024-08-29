@@ -15,6 +15,7 @@ export const PageArray = [
   { link: "/status-bar", title: "Status Bar" },
   { link: "/loader", title: "Loader" },
   { link: "/alert", title: "Alert" },
+  { link: "/style-sheet", title: "Style Sheet" },
 ];
 
 const RootLayout = () => {
