@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
 import React from "react";
+import { StyleSheet, Text } from "react-native";
 
 export const PageArray = [
   {
@@ -16,6 +17,10 @@ export const PageArray = [
   { link: "/loader", title: "Loader" },
   { link: "/alert", title: "Alert" },
   { link: "/style-sheet", title: "Style Sheet" },
+  { link: "/form", title: "Form" },
+  { link: "/pokemon", title: "Pokemon" },
+  { link: "/login", title: "Login" },
+  { link: "/galary", title: "Galary" },
 ];
 
 const RootLayout = () => {
@@ -28,6 +33,20 @@ const RootLayout = () => {
         headerTintColor: "#fff",
         headerTitleStyle: {
           fontWeight: "bold",
+        },
+        headerRight: () => {
+          return (
+            <Text
+              style={{
+                paddingRight: 20,
+                color: "white",
+                fontSize: 16,
+                fontWeight: 700,
+              }}
+            >
+              Menu
+            </Text>
+          );
         },
       }}
     >
@@ -43,3 +62,9 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
+
+export const style = StyleSheet.create({
+  mb2: {
+    marginBottom: 20,
+  },
+});
