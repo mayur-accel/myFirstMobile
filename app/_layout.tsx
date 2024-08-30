@@ -21,6 +21,7 @@ export const PageArray = [
   { link: "/pokemon", title: "Pokemon" },
   { link: "/login", title: "Login" },
   { link: "/galary", title: "Galary" },
+  { link: "/api", title: "api" },
 ];
 
 const RootLayout = () => {
