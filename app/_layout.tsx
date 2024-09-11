@@ -11,6 +11,7 @@ const RootLayout = () => {
     >
       <Stack.Screen name={"index"} />
       <Stack.Screen name={"(routes)/onBoarding"} />
+      <Stack.Screen name={"(routes)/intro"} />
     </Stack>
   );
 };

@@ -1,7 +1,9 @@
+import { useRouter } from "expo-router";
 import React from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const OnBoardingScreen = () => {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <View>
@@ -13,7 +15,10 @@ const OnBoardingScreen = () => {
           aut nobis.
         </Text>
         <View style={styles.btnContainer}>
-          <Pressable style={styles.btn} onPress={() => console.log("logf")}>
+          <Pressable
+            style={styles.btn}
+            onPress={() => router.navigate("/(routes)/intro")}
+          >
             <Text style={styles.btnText}>Get Started</Text>
           </Pressable>
         </View>
